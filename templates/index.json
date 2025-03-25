@@ -9,43 +9,11 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+    "video_background_yJraNw": {
+      "type": "video-background",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "video": "shopify://files/videos/Banner.mp4",
+        "autoplay": true
       }
     },
     "featured_collection": {
@@ -75,10 +43,72 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "image_split_iRYT3y": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_83K4AE": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/apparel.jpg",
+            "link_label": "SHOP DECKS",
+            "link_url": "shopify://collections/decks"
+          }
+        },
+        "image_block_9wEGCR": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Accessories.jpg",
+            "link_label": "SHOP APPAREL",
+            "link_url": "shopify://collections/tees-sweats"
+          }
+        },
+        "image_block_XxpreF": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Accessories_2.jpg",
+            "link_label": "SHOP WHEELS",
+            "link_url": "shopify://collections/wheels-1"
+          }
+        },
+        "image_block_pncYn3": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Wheels.jpg",
+            "link_label": "SHOP ACCESSORIES",
+            "link_url": "shopify://collections/accessories"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_83K4AE",
+        "image_block_9wEGCR",
+        "image_block_XxpreF",
+        "image_block_pncYn3"
+      ],
+      "settings": {}
+    },
+    "image_banner_bHaJPE": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/SCAN719.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "video_background_yJraNw",
+    "featured_collection",
+    "image_banner_bHaJPE",
+    "image_split_iRYT3y"
   ]
 }
