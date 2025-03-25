@@ -141,6 +141,7 @@
                       {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
+                      
                     </div>
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
@@ -266,6 +267,7 @@
       data-cascade
     {% endif %}
   >
+    
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -307,6 +309,7 @@
         {%- endif -%}
       </div>
     </div>
+    
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
@@ -325,6 +328,7 @@
             {%- endfor -%}
           </ul>
         {%- endif -%}
+        <img src={{ 'EndOfSite.jpg' | asset_url }} width='' height='' style="margin-top:20px;width:100%; height:auto;">
       </div>
     </div>
   </div>
