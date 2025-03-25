@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "video_background_CEAADb": {
+      "type": "video-background",
+      "settings": {
+        "video": "shopify://files/videos/Banner.mp4",
+        "autoplay": true
+      }
+    },
+    "featured_collection_gwJpHD": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "home-page",
+        "products_to_show": 20,
+        "columns_desktop": 5,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "inverse",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_split_k44XzT": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_GyiBCf": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Apparel.jpg",
+            "link_label": "APPAREL",
+            "link_url": "shopify://collections/apparel"
+          }
+        },
+        "image_block_6MLN6W": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/HardGoods.jpg",
+            "link_label": "DECKS",
+            "link_url": "shopify://collections/decks"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_GyiBCf",
+        "image_block_6MLN6W"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "video_background_CEAADb",
+    "featured_collection_gwJpHD",
+    "image_split_k44XzT"
+  ]
+}

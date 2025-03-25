@@ -1,0 +1,41 @@
+.team-member.grid__item {
+    padding: 0;
+    margin-bottom: 4rem;
+}
+
+.team-member.grid__item a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+
+}
+
+.team-member.grid__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: all 100ms ease-in-out;
+    aspect-ratio: 1/1;
+}
+
+.team-member.grid__item a:hover img {
+    filter: grayscale(0);
+}
+
+.team-member.grid__item span {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.team-member.grid__item svg {
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+}

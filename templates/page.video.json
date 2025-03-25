@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "videos": {
+      "type": "main-video",
+      "blocks": {
+        "video_dYVNWN": {
+          "type": "video",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=x-5hyXUYiSg"
+          }
+        },
+        "video_e6Emye": {
+          "type": "video",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=JnhIiMBdK_c"
+          }
+        },
+        "video_aEE8GW": {
+          "type": "video",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=M2a5Bw4gGis"
+          }
+        },
+        "video_P7nUAV": {
+          "type": "video",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=FgsmQR25ccU"
+          }
+        }
+      },
+      "block_order": [
+        "video_dYVNWN",
+        "video_e6Emye",
+        "video_aEE8GW",
+        "video_P7nUAV"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "videos"
+  ]
+}

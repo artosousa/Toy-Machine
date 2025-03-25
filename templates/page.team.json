@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "team": {
+      "type": "main-team",
+      "blocks": {
+        "team_member_NzkUAT": {
+          "type": "team_member",
+          "settings": {
+            "name": "Julian Lewis",
+            "ig": "_julianlewis",
+            "image": "shopify://shop_images/Julian.jpg"
+          }
+        },
+        "team_member_w3Gg99": {
+          "type": "team_member",
+          "settings": {
+            "name": "   Dakota Servold",
+            "ig": "dakotaservold",
+            "image": "shopify://shop_images/424438681_417088687510460_5221339037493007821_n.jpg"
+          }
+        },
+        "team_member_EM8UkR": {
+          "type": "team_member",
+          "settings": {
+            "name": "Jesse Lindloff",
+            "ig": "beanwater1",
+            "image": "shopify://shop_images/423417305_2006722079713963_8211804815877708463_n_1551669c-7023-42ff-923d-d0443aa60965.jpg"
+          }
+        },
+        "team_member_bxFnr8": {
+          "type": "team_member",
+          "settings": {
+            "name": "Aidan Campbell",
+            "ig": "aidancampbell",
+            "image": "shopify://shop_images/263490057_298176452263623_884374758798928123_n.jpg"
+          }
+        },
+        "team_member_L3qcDQ": {
+          "type": "team_member",
+          "settings": {
+            "name": "Liam Pace",
+            "ig": "liampace_",
+            "image": "shopify://shop_images/259994793_297289608962853_4621547696021762977_n.jpg"
+          }
+        },
+        "team_member_eU3Qkf": {
+          "type": "team_member",
+          "settings": {
+            "name": "Tania Cruz",
+            "ig": "tania.jcruz",
+            "image": "shopify://shop_images/288751133_1253720172098750_6262259106722481324_n.jpg"
+          }
+        },
+        "team_member_wMtNMR": {
+          "type": "team_member",
+          "settings": {
+            "name": "Ariana Spencer",
+            "ig": "ariana.spencer",
+            "image": "shopify://shop_images/315319492_3302202446590825_4504428573929788545_n.jpg"
+          }
+        },
+        "team_member_Fc6VkX": {
+          "type": "team_member",
+          "settings": {
+            "name": " Ryan Hamburg",
+            "ig": "ryan_hamburg",
+            "image": "shopify://shop_images/333617668_740644431020441_7831372813653554547_n.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "team_member_NzkUAT",
+        "team_member_w3Gg99",
+        "team_member_EM8UkR",
+        "team_member_bxFnr8",
+        "team_member_L3qcDQ",
+        "team_member_eU3Qkf",
+        "team_member_wMtNMR",
+        "team_member_Fc6VkX"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "team"
+  ]
+}
