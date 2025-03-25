@@ -14,6 +14,30 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "image_wL8gjm": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/tm_gb.jpg",
+            "image_width": 380,
+            "alignment": "center"
+          }
+        },
+        "image_nKU3L7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Various-titles-copy-6.jpg",
+            "image_width": 365,
+            "alignment": "center"
+          }
+        },
+        "text_WLqcmY": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": ""
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
@@ -27,29 +51,14 @@
             "heading": "",
             "subtext": "<p>📍<strong>Address:<br/></strong>2096 Newton Ave. San Diego, CA 92113<br/><strong>📞 Phone: <br/></strong>(619)232-7523<br/><strong>✉️ Email: <br/></strong><a href=\"mailto:contact@tumyeto.com\" title=\"mailto:contact@tumyeto.com\">Online Customer Support<br/></a><a href=\"mailto:b2b-inquiry@tumyeto.net\" title=\"mailto:b2b-inquiry@tumyeto.net\">New Shop or Distributor</a></p>"
           }
-        },
-        "image_wL8gjm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ToyMachine_Logo.svg",
-            "image_width": 210,
-            "alignment": "center"
-          }
-        },
-        "image_nKU3L7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/tylogo_new512_b79436cc-3943-4d88-8f90-8d18104c0243.png",
-            "image_width": 400,
-            "alignment": "center"
-          }
         }
       },
       "block_order": [
-        "footer-0",
-        "text_pK8V3M",
         "image_wL8gjm",
-        "image_nKU3L7"
+        "image_nKU3L7",
+        "text_WLqcmY",
+        "footer-0",
+        "text_pK8V3M"
       ],
       "settings": {
         "color_scheme": "background-1",
