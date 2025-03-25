@@ -20,10 +20,12 @@
 {%- endstyle -%}
 {% assign grip_product = all_products[settings.add_grip] %}
 {% assign grip_variant_id = grip_product.variants.first.id %}
+{% assign grip_handle = grip_product.handle %}
 
 <script type="application/json" id="js-cart-drawer-settings">
     {
-      "grip_id": {{ grip_variant_id }}
+      "grip_id": {{ grip_variant_id }},
+      "grip_handle": {{ grip_handle }}
     }
 </script>
 {%- unless settings.cart_type == 'drawer' -%}

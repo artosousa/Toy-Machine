@@ -37,6 +37,7 @@ class CartDrawer extends HTMLElement {
   async addGripToCart() {
     const gripData = document.getElementById('js-cart-drawer-settings');
     const gripSettings = JSON.parse(gripData.innerHTML);
+    console.log(gripSettings)
     let gripCount = 0;
     let deckCount = 0;
 
@@ -54,13 +55,13 @@ class CartDrawer extends HTMLElement {
         }
 
         // Check if product.handle is 'grip-single-sheet'
-        if (item.handle === 'star-and-moon-grip') {
+        if (item.handle === gripSettings.grip_handle) {
             gripCount += item.quantity; // Increment gripCount by the item's quantity
         }
     });
 
     // If deckCount is greater than 0, add grip to the cart
-    if (deckCount !== gripCount ) {
+    if (deckCount > gripCount ) {
         this.addGripToCartItem(gripSettings.grip_id, deckCount - gripCount);
     }
 

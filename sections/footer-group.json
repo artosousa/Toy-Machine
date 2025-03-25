@@ -31,16 +31,16 @@
         "image_wL8gjm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/foundation_Logo.svg",
-            "image_width": 540,
+            "image": "shopify://shop_images/ToyMachine_Logo.svg",
+            "image_width": 210,
             "alignment": "center"
           }
         },
         "image_nKU3L7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/FooterLogo3.png",
-            "image_width": 75,
+            "image": "shopify://shop_images/tylogo_new512_b79436cc-3943-4d88-8f90-8d18104c0243.png",
+            "image_width": 400,
             "alignment": "center"
           }
         }
@@ -52,7 +52,7 @@
         "image_nKU3L7"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,

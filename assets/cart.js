@@ -113,18 +113,18 @@ class CartItems extends HTMLElement {
             }
         }
 
-        // Check if product.handle is 'grip-single-sheet'
-        if (item.handle === 'star-and-moon-grip') {
+        // Check if product.handle matches grip in settings
+        if (item.handle === gripSettings.grip_handle) {
             gripCount += item.quantity; // Increment gripCount by the item's quantity
         }
     });
 
-    // If deckCount is greater than 0, add grip to the cart
-    if (deckCount !== gripCount ) {
+    // If deckCount is greater than gripAcount, add grip to the cart
+    if (deckCount > gripCount ) {
         this.addGripToCartItem(gripSettings.grip_id, deckCount - gripCount);
     }
 
-
+    
   }
   // Function to add the grip item to the cart
   addGripToCartItem(gripId, quantity) {
