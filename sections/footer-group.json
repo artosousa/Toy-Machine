@@ -14,12 +14,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_wL8gjm": {
-          "type": "image",
+        "text_WLqcmY": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/tm_gb.jpg",
-            "image_width": 175,
-            "alignment": "center"
+            "heading": "",
+            "subtext": ""
           }
         },
         "image_nKU3L7": {
@@ -28,14 +28,6 @@
             "image": "shopify://shop_images/Various-titles-copy-6.jpg",
             "image_width": 365,
             "alignment": ""
-          }
-        },
-        "text_WLqcmY": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "heading": "",
-            "subtext": ""
           }
         },
         "footer-0": {
@@ -51,14 +43,22 @@
             "heading": "",
             "subtext": "<p>📍<strong>Address:<br/></strong>2096 Newton Ave. San Diego, CA 92113<br/><strong>📞 Phone: <br/></strong>(619)232-7523<br/><strong>✉️ Email: <br/></strong><a href=\"mailto:contact@tumyeto.com\" title=\"mailto:contact@tumyeto.com\">Online Customer Support<br/></a><a href=\"mailto:b2b-inquiry@tumyeto.net\" title=\"mailto:b2b-inquiry@tumyeto.net\">New Shop or Distributor</a></p>"
           }
+        },
+        "image_wL8gjm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tm_gb.jpg",
+            "image_width": 175,
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
-        "image_wL8gjm",
-        "image_nKU3L7",
         "text_WLqcmY",
+        "image_nKU3L7",
         "footer-0",
-        "text_pK8V3M"
+        "text_pK8V3M",
+        "image_wL8gjm"
       ],
       "settings": {
         "color_scheme": "background-1",
