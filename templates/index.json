@@ -67,7 +67,7 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/apparel.jpg",
-            "link_label": "DECKS",
+            "link_label": "",
             "link_url": "shopify://collections/decks"
           }
         },
