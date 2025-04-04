@@ -75,7 +75,7 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/Accessories.jpg",
-            "link_label": "SHOP APPAREL",
+            "link_label": "APPAREL",
             "link_url": "shopify://collections/tees-sweats"
           }
         },
@@ -83,7 +83,7 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/Accessories_2.jpg",
-            "link_label": "SHOP WHEELS",
+            "link_label": "WHEELS",
             "link_url": "shopify://collections/wheels-1"
           }
         },
@@ -91,7 +91,7 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/Wheels.jpg",
-            "link_label": "SHOP ACCESSORIES",
+            "link_label": "ACCESSORIES",
             "link_url": "shopify://collections/accessories"
           }
         }
