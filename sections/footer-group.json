@@ -25,8 +25,8 @@
         "image_nKU3L7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Various-titles-copy-6.jpg",
-            "image_width": 365,
+            "image": "shopify://shop_images/footerIMG.png",
+            "image_width": 290,
             "alignment": ""
           }
         },
@@ -47,8 +47,8 @@
         "image_wL8gjm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/tm_gb.jpg",
-            "image_width": 175,
+            "image": "shopify://shop_images/tylogo_new512_b79436cc-3943-4d88-8f90-8d18104c0243.webp",
+            "image_width": 225,
             "alignment": "center"
           }
         }
