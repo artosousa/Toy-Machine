@@ -303,68 +303,67 @@
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           const fly = document.getElementById('fly');
+          let x = 0;
+          let y = 0;
+          const speed = 0.5; // Increased speed for faster movement
+          let mouseX = 0;
+          let mouseY = 0;
 
-          requestAnimationFrame(() => {
-            let x = Math.random() * (window.innerWidth - fly.offsetWidth);
-            let y = Math.random() * (window.innerHeight - fly.offsetHeight);
-            let angle = Math.random() * 2 * Math.PI; // head direction in radians
-            const speed = 0.5;
-
-            function updatePosition() {
-              // Slightly change the heading to simulate a wandering bug
-              angle += (Math.random() - 0.5) * 0.05;
-
-              // Move in the direction the fly is facing
-              x += Math.cos(angle) * speed;
-              y += Math.sin(angle) * speed;
-
-              const flyWidth = fly.offsetWidth;
-              const flyHeight = fly.offsetHeight;
-
-              // Keep the fly within bounds, bounce and reverse angle if needed
-              if (x < 0) { x = 0; angle = Math.PI - angle; }
-              if (x > window.innerWidth - flyWidth) { x = window.innerWidth - flyWidth; angle = Math.PI - angle; }
-              if (y < 0) { y = 0; angle = -angle; }
-              if (y > window.innerHeight - flyHeight) { y = window.innerHeight - flyHeight; angle = -angle; }
-
-              // Apply position and rotation
-              fly.style.left = `${x}px`;
-              fly.style.top = `${y}px`;
-
-              // Rotate in direction of movement
-              const deg = angle * (180 / Math.PI);
-              fly.style.transform = `rotate(${deg}deg)`;
-
-              requestAnimationFrame(updatePosition);
-            }
-
-            updatePosition();
+          // Update mouse position continuously
+          document.addEventListener('mousemove', function (event) {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
           });
-        });
 
+          function updatePosition() {
+            // Calculate the angle between the fly and the cursor
+            const dx = mouseX - x;
+            const dy = mouseY - y;
+            const angle = Math.atan2(dy, dx);
+
+            // Move the fly towards the cursor by a certain speed
+            x += Math.cos(angle) * speed;
+            y += Math.sin(angle) * speed;
+
+            // Apply the fly's position
+            fly.style.left = `${x}px`;
+            fly.style.top = `${y}px`;
+
+            // Rotate the fly in the direction of movement
+            const deg = angle * (180 / Math.PI);
+            fly.style.transform = `rotate(${deg - 90}deg)`; // Adjust for image orientation
+
+            // Continue the animation
+            requestAnimationFrame(updatePosition);
+          }
+
+          // Start the movement
+          updatePosition();
+        });
       </script>
+
       {% style %}
-        #fly{
+        #fly {
           position: fixed;
-          top: 0;
-          left: 0;
           z-index: 9999;
           width: 50px; /* or whatever size you want */
-          transition: transform 0.2s linear;
           pointer-events: none;
+          transition: transform 0.2s linear;
         }
       {% endstyle %}
+
       <div id="fly">
-        {{ 
-          settings.fly 
-          | image_url: width: 60 
-          | image_tag: 
-            width: 60, 
+        {{
+          settings.fly
+          | image_url: width: 60
+          | image_tag:
+            width: 60,
             height: 57,
             class: 'fly-img',
             loading: 'lazy',
-            alt: 'fly' 
+            alt: 'fly'
         }}
+      </div>
       </div>
     {% endif %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
