@@ -301,36 +301,63 @@
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     {% if settings.fly != blank %}
       <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const fly = document.getElementById('fly');
-            let x = 0;
-            let y = 0;
-            const speed = 0.5; // Speed at which the fly moves towards the cursor/touch
-            let mouseX = 0;
-            let mouseY = 0;
+        document.addEventListener("DOMContentLoaded", function () {
+          const fly = document.getElementById('fly');
+          let x = 0;
+          let y = 0;
+          const speed = 0.5; // Speed at which the fly moves
+          let mouseX = 0;
+          let mouseY = 0;
 
-            // Update mouse or touch position continuously
-            function updatePositionEvent(event) {
-              if (event.type === 'mousemove') {
-                mouseX = event.clientX;
-                mouseY = event.clientY;
-              } else if (event.type === 'touchmove') {
-                mouseX = event.touches[0].clientX;
-                mouseY = event.touches[0].clientY;
-              }
+          // Start the fly moving diagonally downwards
+          let angle = Math.PI / 4; // 45 degrees for diagonal movement (down-right)
+          let moving = false; // Flag to track if user interaction started
+
+          // Initial diagonal movement (without user interaction)
+          function startDiagonalMovement() {
+            x += Math.cos(angle) * speed;
+            y += Math.sin(angle) * speed;
+
+            // Apply the fly's position
+            fly.style.left = `${x}px`;
+            fly.style.top = `${y}px`;
+
+            // Rotate the fly in the direction of movement
+            const deg = angle * (180 / Math.PI);
+            fly.style.transform = `rotate(${deg - 90}deg)`; // Adjust for image orientation
+
+            if (!moving) {
+              requestAnimationFrame(startDiagonalMovement); // Keep moving diagonally if not yet interacting
+            }
+          }
+
+          // Update position based on user interaction
+          function updatePositionEvent(event) {
+            if (event.type === 'mousemove') {
+              mouseX = event.clientX;
+              mouseY = event.clientY;
+            } else if (event.type === 'touchmove') {
+              mouseX = event.touches[0].clientX;
+              mouseY = event.touches[0].clientY;
             }
 
-            // Event listeners for both mouse and touch events
-            document.addEventListener('mousemove', updatePositionEvent);
-            document.addEventListener('touchmove', updatePositionEvent);
+            // Once the user moves the mouse or touches the screen, stop diagonal movement and start following the cursor
+            moving = true;
+          }
 
-            function updateFlyPosition() {
+          // Event listeners for both mouse and touch events
+          document.addEventListener('mousemove', updatePositionEvent);
+          document.addEventListener('touchmove', updatePositionEvent);
+
+          // Update the fly's position after user interaction
+          function updateFlyPosition() {
+            if (moving) {
               // Calculate the angle between the fly and the cursor/touch
               const dx = mouseX - x;
               const dy = mouseY - y;
-              const angle = Math.atan2(dy, dx);
+              angle = Math.atan2(dy, dx); // Calculate the angle to follow the cursor
 
-              // Move the fly towards the cursor/touch by a certain speed
+              // Move the fly towards the cursor/touch
               x += Math.cos(angle) * speed;
               y += Math.sin(angle) * speed;
 
@@ -341,40 +368,43 @@
               // Rotate the fly in the direction of movement
               const deg = angle * (180 / Math.PI);
               fly.style.transform = `rotate(${deg - 90}deg)`; // Adjust for image orientation
-
-              // Continue the animation
-              requestAnimationFrame(updateFlyPosition);
             }
 
-            // Start the movement
-            updateFlyPosition();
-          });
-        </script>
-
-        {% style %}
-          #fly {
-            position: fixed;
-            z-index: 9999;
-            width: 50px; /* or whatever size you want */
-            pointer-events: none;
-            transition: transform 0.2s linear;
+            requestAnimationFrame(updateFlyPosition);
           }
-        {% endstyle %}
 
-        <div id="fly">
-          {{
-            settings.fly
-            | image_url: width: 60
-            | image_tag:
-              width: 60,
-              height: 57,
-              class: 'fly-img',
-              loading: 'lazy',
-              alt: 'fly'
-          }}
-        </div>
+          // Start the diagonal movement initially
+          startDiagonalMovement();
 
+          // Start updating the fly's position (following cursor/touch)
+          updateFlyPosition();
+        });
+      </script>
+
+      {% style %}
+        #fly {
+          position: fixed;
+          z-index: 9999;
+          width: 50px; /* or whatever size you want */
+          pointer-events: none;
+          transition: transform 0.2s linear;
+        }
+      {% endstyle %}
+
+      <div id="fly">
+        {{
+          settings.fly
+          | image_url: width: 60
+          | image_tag:
+            width: 60,
+            height: 57,
+            class: 'fly-img',
+            loading: 'lazy',
+            alt: 'fly'
+        }}
       </div>
+
+
     {% endif %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
