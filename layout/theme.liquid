@@ -301,74 +301,79 @@
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     {% if settings.fly != blank %}
       <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const fly = document.getElementById('fly');
-          let x = 0;
-          let y = 0;
-          const speed = 0.5; // Increased speed for faster movement
-          let mouseX = 0;
-          let mouseY = 0;
+          document.addEventListener("DOMContentLoaded", function () {
+            const fly = document.getElementById('fly');
+            let x = 0;
+            let y = 0;
+            const speed = 0.5; // Speed at which the fly moves towards the cursor/touch
+            let mouseX = 0;
+            let mouseY = 0;
 
-          // Update mouse position continuously
-          document.addEventListener('mousemove', function (event) {
-            mouseX = event.clientX;
-            mouseY = event.clientY;
+            // Update mouse or touch position continuously
+            function updatePositionEvent(event) {
+              if (event.type === 'mousemove') {
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+              } else if (event.type === 'touchmove') {
+                mouseX = event.touches[0].clientX;
+                mouseY = event.touches[0].clientY;
+              }
+            }
+
+            // Event listeners for both mouse and touch events
+            document.addEventListener('mousemove', updatePositionEvent);
+            document.addEventListener('touchmove', updatePositionEvent);
+
+            function updateFlyPosition() {
+              // Calculate the angle between the fly and the cursor/touch
+              const dx = mouseX - x;
+              const dy = mouseY - y;
+              const angle = Math.atan2(dy, dx);
+
+              // Move the fly towards the cursor/touch by a certain speed
+              x += Math.cos(angle) * speed;
+              y += Math.sin(angle) * speed;
+
+              // Apply the fly's position
+              fly.style.left = `${x}px`;
+              fly.style.top = `${y}px`;
+
+              // Rotate the fly in the direction of movement
+              const deg = angle * (180 / Math.PI);
+              fly.style.transform = `rotate(${deg - 90}deg)`; // Adjust for image orientation
+
+              // Continue the animation
+              requestAnimationFrame(updateFlyPosition);
+            }
+
+            // Start the movement
+            updateFlyPosition();
           });
+        </script>
 
-          function updatePosition() {
-            // Calculate the angle between the fly and the cursor
-            const dx = mouseX - x;
-            const dy = mouseY - y;
-            const angle = Math.atan2(dy, dx);
-
-            // Move the fly towards the cursor by a certain speed
-            x += Math.cos(angle) * speed;
-            y += Math.sin(angle) * speed;
-
-            // Apply the fly's position
-            fly.style.left = `${x}px`;
-            fly.style.top = `${y}px`;
-
-            // Rotate the fly in the direction of movement
-            const deg = angle * (180 / Math.PI);
-            fly.style.transform = `rotate(${deg - 90}deg)`; // Adjust for image orientation
-
-            // Continue the animation
-            requestAnimationFrame(updatePosition);
-          }
-
-          // Start the movement
-          updatePosition();
-        });
-      </script>
-
-      {% style %}
-        #fly {
-          position: fixed;
-          z-index: 9999;
-          width: 50px; /* or whatever size you want */
-          pointer-events: none;
-          transition: transform 0.2s linear;
-        }
-        @media screen and (max-width:640px){
+        {% style %}
           #fly {
-            display:none;
+            position: fixed;
+            z-index: 9999;
+            width: 50px; /* or whatever size you want */
+            pointer-events: none;
+            transition: transform 0.2s linear;
           }
-        }
-      {% endstyle %}
+        {% endstyle %}
 
-      <div id="fly">
-        {{
-          settings.fly
-          | image_url: width: 60
-          | image_tag:
-            width: 60,
-            height: 57,
-            class: 'fly-img',
-            loading: 'lazy',
-            alt: 'fly'
-        }}
-      </div>
+        <div id="fly">
+          {{
+            settings.fly
+            | image_url: width: 60
+            | image_tag:
+              width: 60,
+              height: 57,
+              class: 'fly-img',
+              loading: 'lazy',
+              alt: 'fly'
+          }}
+        </div>
+
       </div>
     {% endif %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
