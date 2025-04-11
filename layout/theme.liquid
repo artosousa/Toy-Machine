@@ -299,6 +299,74 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    {% if settings.fly != blank %}
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const fly = document.getElementById('fly');
+
+          requestAnimationFrame(() => {
+            let x = Math.random() * (window.innerWidth - fly.offsetWidth);
+            let y = Math.random() * (window.innerHeight - fly.offsetHeight);
+            let angle = Math.random() * 2 * Math.PI; // head direction in radians
+            const speed = 0.5;
+
+            function updatePosition() {
+              // Slightly change the heading to simulate a wandering bug
+              angle += (Math.random() - 0.5) * 0.05;
+
+              // Move in the direction the fly is facing
+              x += Math.cos(angle) * speed;
+              y += Math.sin(angle) * speed;
+
+              const flyWidth = fly.offsetWidth;
+              const flyHeight = fly.offsetHeight;
+
+              // Keep the fly within bounds, bounce and reverse angle if needed
+              if (x < 0) { x = 0; angle = Math.PI - angle; }
+              if (x > window.innerWidth - flyWidth) { x = window.innerWidth - flyWidth; angle = Math.PI - angle; }
+              if (y < 0) { y = 0; angle = -angle; }
+              if (y > window.innerHeight - flyHeight) { y = window.innerHeight - flyHeight; angle = -angle; }
+
+              // Apply position and rotation
+              fly.style.left = `${x}px`;
+              fly.style.top = `${y}px`;
+
+              // Rotate in direction of movement
+              const deg = angle * (180 / Math.PI);
+              fly.style.transform = `rotate(${deg}deg)`;
+
+              requestAnimationFrame(updatePosition);
+            }
+
+            updatePosition();
+          });
+        });
+
+      </script>
+      {% style %}
+        #fly{
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 9999;
+          width: 50px; /* or whatever size you want */
+          transition: transform 0.2s linear;
+          pointer-events: none;
+        }
+      {% endstyle %}
+      <div id="fly">
+        {{ 
+          settings.fly 
+          | image_url: width: 60 
+          | image_tag: 
+            width: 60, 
+            height: 57,
+            class: 'fly-img',
+            loading: 'lazy',
+            alt: 'fly' 
+        }}
+      </div>
+    {% endif %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
