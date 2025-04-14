@@ -11,7 +11,6 @@
   "sections": {
     "video_background_yJraNw": {
       "type": "video-background",
-      "disabled": true,
       "settings": {
         "video": "shopify://files/videos/Banner.mp4",
         "autoplay": true
@@ -19,6 +18,7 @@
     },
     "image_banner_hfbQyi": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Sect_Ad_Total.jpg",
         "image_overlay_opacity": 0,
