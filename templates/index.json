@@ -42,7 +42,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "featured-random",
-        "products_to_show": 20,
+        "products_to_show": 15,
         "columns_desktop": 5,
         "full_width": true,
         "show_view_all": false,
