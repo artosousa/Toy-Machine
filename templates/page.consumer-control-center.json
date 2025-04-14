@@ -17,8 +17,42 @@
         "padding_bottom": 28
       }
     },
+    "image_split_hVBew6": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_ztbbtz": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Sect_Ad_Total.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_D6KWfH": {
+          "type": "image_block",
+          "settings": {
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_tjm3pe": {
+          "type": "image_block",
+          "settings": {
+            "link_label": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_ztbbtz",
+        "image_block_D6KWfH",
+        "image_block_tjm3pe"
+      ],
+      "settings": {}
+    },
     "image_banner_XErJag": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Sect_Ad_Total.jpg",
         "image_overlay_opacity": 0,
@@ -35,6 +69,7 @@
     },
     "image_banner_w4nVgt": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TOY_Machine_BRADEN_Pro_Thrasher_2022.jpg",
         "image_overlay_opacity": 0,
@@ -51,6 +86,7 @@
     },
     "image_banner_CgVwHX": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TOY_Machine_Georgia_THRASHER.jpg",
         "image_overlay_opacity": 0,
@@ -67,6 +103,7 @@
     },
     "image_banner_AyGwFP": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TOY_Machine_LEABRES_Thrasher_2022.jpg",
         "image_overlay_opacity": 0,
@@ -83,6 +120,7 @@
     },
     "image_banner_G9VtzA": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TOY_Machine_LEO_ROMERO_Thrasher_2022_2.jpg",
         "image_overlay_opacity": 0,
@@ -100,6 +138,7 @@
   },
   "order": [
     "main",
+    "image_split_hVBew6",
     "image_banner_XErJag",
     "image_banner_w4nVgt",
     "image_banner_CgVwHX",
