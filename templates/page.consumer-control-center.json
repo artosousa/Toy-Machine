@@ -31,13 +31,15 @@
         "image_block_D6KWfH": {
           "type": "image_block",
           "settings": {
-            "link_label": "",
+            "image": "shopify://shop_images/TOY_Machine_LEO_ROMERO_Thrasher_2022_2.jpg",
+            "link_label": "video",
             "link_url": ""
           }
         },
         "image_block_tjm3pe": {
           "type": "image_block",
           "settings": {
+            "image": "shopify://shop_images/TOY_Machine_Georgia_THRASHER.jpg",
             "link_label": "",
             "link_url": ""
           }
@@ -56,14 +58,15 @@
         "image_block_bh3CPn": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Sect_Ad_Total.jpg",
-            "link_label": "",
+            "image": "shopify://shop_images/TOY_Machine_LEABRES_Thrasher_2022.jpg",
+            "link_label": "team",
             "link_url": ""
           }
         },
         "image_block_BN3UJR": {
           "type": "image_block",
           "settings": {
+            "image": "shopify://shop_images/TOY_Machine_BRADEN_Pro_Thrasher_2022.jpg",
             "link_label": "IG",
             "link_url": ""
           }
