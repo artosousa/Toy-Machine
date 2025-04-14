@@ -50,6 +50,40 @@
       ],
       "settings": {}
     },
+    "image_split_BbGiiA": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_bh3CPn": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Sect_Ad_Total.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_BN3UJR": {
+          "type": "image_block",
+          "settings": {
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_wTAEgq": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_fall25cover.jpg",
+            "link_label": "catalog",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_bh3CPn",
+        "image_block_BN3UJR",
+        "image_block_wTAEgq"
+      ],
+      "settings": {}
+    },
     "image_banner_XErJag": {
       "type": "image-banner",
       "disabled": true,
@@ -139,6 +173,7 @@
   "order": [
     "main",
     "image_split_hVBew6",
+    "image_split_BbGiiA",
     "image_banner_XErJag",
     "image_banner_w4nVgt",
     "image_banner_CgVwHX",
