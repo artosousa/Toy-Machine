@@ -52,6 +52,7 @@
         },
         "announcement_AwFiFA": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "TOY MACHINE BLOODSUCKING",
             "link": ""
