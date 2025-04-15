@@ -93,7 +93,7 @@
           "settings": {
             "image": "shopify://shop_images/tm_fall25cover.jpg",
             "link_label": "catalog",
-            "link_url": ""
+            "link_url": "shopify://pages/tm-summer-2025"
           }
         }
       },
