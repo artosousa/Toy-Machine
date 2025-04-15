@@ -17,20 +17,54 @@
         "padding_bottom": 28
       }
     },
-    "page_DTBRYR": {
-      "type": "page",
-      "name": "t:sections.page.presets.name",
+    "image_banner_no_title_EcRPpU": {
+      "type": "image-banner-no-title",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "page": "tm-summer-2025",
-        "heading_size": "h1",
+        "image": "shopify://shop_images/tm_fall25cover.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
+    },
+    "image_split_9Nk7ci": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_hiRHGx": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_axel_globe.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_R43yJJ": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_axel_globedck.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_hiRHGx",
+        "image_block_R43yJJ"
+      ],
+      "name": "Two Column Image Blocks",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "page_DTBRYR"
+    "image_banner_no_title_EcRPpU",
+    "image_split_9Nk7ci"
   ]
 }
