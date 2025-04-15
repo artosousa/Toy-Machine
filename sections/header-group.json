@@ -56,7 +56,7 @@
       ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "inverse",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
