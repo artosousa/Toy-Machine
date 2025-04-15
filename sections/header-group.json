@@ -55,7 +55,7 @@
       ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
-        "color_scheme": "accent-2",
+        "color_scheme": "scheme-0e31ca69-0d6f-41a8-acd1-1b0da64498bd",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
