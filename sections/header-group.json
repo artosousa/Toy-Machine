@@ -39,19 +39,10 @@
             "text": "CONSUMER CONTROL CENTER",
             "link": "shopify://pages/consumer-control-center"
           }
-        },
-        "announcement_AwFiFA": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "TOY MACHINE BLOODSUCKING",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_HVyxWF",
-        "announcement_AwFiFA"
+        "announcement_HVyxWF"
       ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
