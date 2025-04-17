@@ -38,9 +38,9 @@
         "image_block_7ixNfr": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/tm_whipper_tees.jpg",
+            "image": "shopify://shop_images/tm_monsterflex.jpg",
             "link_label": "",
-            "link_url": ""
+            "link_url": "shopify://products/monster-assorted-8-75"
           }
         },
         "image_block_eMe7fp": {
@@ -48,7 +48,7 @@
           "settings": {
             "image": "shopify://shop_images/tm_turtlesymm_dcks.jpg",
             "link_label": "",
-            "link_url": ""
+            "link_url": "shopify://products/8-25-sect-symetrical-comple"
           }
         }
       },
