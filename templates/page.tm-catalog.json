@@ -170,6 +170,32 @@
       ],
       "settings": {}
     },
+    "image_split_47jNR4": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_NCmHRC": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_myles_jazz_dck_828094e6-df06-4fc1-bf08-eef09cd5a275.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_KiAUXG": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_myles_jazz_a3e48270-18e8-42c9-a843-bdce823eccf2.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_NCmHRC",
+        "image_block_KiAUXG"
+      ],
+      "settings": {}
+    },
     "image_banner_6GFVk6": {
       "type": "image-banner",
       "settings": {
@@ -196,6 +222,7 @@
     "image_split_Rf4tKQ",
     "image_split_pcYx8b",
     "image_split_gk6B7f",
+    "image_split_47jNR4",
     "image_banner_6GFVk6"
   ]
 }
