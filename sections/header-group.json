@@ -29,35 +29,9 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "announcement_bar_HPEfq6": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_HVyxWF": {
-          "type": "announcement",
-          "settings": {
-            "text": "CONSUMER CONTROL CENTER",
-            "link": "shopify://pages/consumer-control-center"
-          }
-        }
-      },
-      "block_order": [
-        "announcement_HVyxWF"
-      ],
-      "name": "t:sections.announcement-bar.presets.name",
-      "settings": {
-        "color_scheme": "scheme-0e31ca69-0d6f-41a8-acd1-1b0da64498bd",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
     }
   },
   "order": [
-    "header",
-    "announcement_bar_HPEfq6"
+    "header"
   ]
 }
