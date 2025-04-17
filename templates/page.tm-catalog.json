@@ -98,7 +98,7 @@
         "image_block_W9XwcE": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/tm_monster_tees.jpg",
+            "image": "shopify://shop_images/tm_leo_ladydanger_552b0a91-ec43-4ba1-81a8-9d1351f5f61f.jpg",
             "link_label": "",
             "link_url": ""
           }
@@ -106,7 +106,7 @@
         "image_block_yXCtix": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/tm_monsterflex.jpg",
+            "image": "shopify://shop_images/tm_leo_ladydanger_dcks_5702de37-9f39-42f1-9159-b9569aa83e9b.jpg",
             "link_label": "",
             "link_url": ""
           }
@@ -115,6 +115,58 @@
       "block_order": [
         "image_block_W9XwcE",
         "image_block_yXCtix"
+      ],
+      "settings": {}
+    },
+    "image_split_pcYx8b": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_Gxh3R4": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_cj_devilpic_ab18b13b-0b84-4490-9482-7b0153270877.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_XmeUhP": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_cj_devilcatskeleton_dck_0b032b75-8c0a-4960-8386-7a01fd905b7a.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_Gxh3R4",
+        "image_block_XmeUhP"
+      ],
+      "settings": {}
+    },
+    "image_split_gk6B7f": {
+      "type": "image-split",
+      "blocks": {
+        "image_block_aVkFEm": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_deadmonster_tees_4551b9aa-f99d-4ab2-85a2-c67e66223044.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        },
+        "image_block_mpEKhK": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/tm_deadmonster_dck_b0da4dd3-fb75-4a20-9284-bdfcee5395d3.jpg",
+            "link_label": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_aVkFEm",
+        "image_block_mpEKhK"
       ],
       "settings": {}
     },
@@ -142,6 +194,8 @@
     "video_background_gjcPnY",
     "image_split_mm4cxV",
     "image_split_Rf4tKQ",
+    "image_split_pcYx8b",
+    "image_split_gk6B7f",
     "image_banner_6GFVk6"
   ]
 }
