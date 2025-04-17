@@ -1,26 +1,63 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign columns = page.metafields.custom.columns | default: "One" | downcase
+  assign show_title = page.metafields.custom.show_title | default: false
+  assign show_content = page.metafields.custom.show_content | default: false
+  assign page_images = page.metafields.custom.catalogue_image.value
+
+-%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  .one-column-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0rem; /* space between columns */
+  }
+    .one-column-grid > div {
+      width: 100%;
+    }
+      .one-column-grid > div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+    .two-column-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0rem; /* space between columns */
+    }
   }
+  
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
-  </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
-  </div>
+<div class="page-full section-{{ section.id }}-padding {{ columns }}-column-grid" >
+  {%  if show_title %}
+      <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {{ page.title | escape }}
+      </h1>
+  {% endif %}
+  {% if show_content %}
+    <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      {{ page.content }}
+    </div>
+  {% endif %}
+  {% for item in  page_images%}
+    <div class="page_image {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <img src="{{ item | image_url: width: 1020 }}" alt="{{ item.alt | escape }}" width="{{item.width}}" height="{{ item.height }}">
+    </div>
+  {% endfor %}
+
 </div>
 
 {% schema %}

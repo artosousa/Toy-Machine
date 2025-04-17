@@ -11,14 +11,14 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_banner_no_title_EcRPpU": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall252.jpg",
@@ -36,6 +36,7 @@
     },
     "image_banner_no_title_8MTgxD": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall253.jpg",
@@ -53,6 +54,7 @@
     },
     "image_banner_no_title_8ytmCw": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall254.jpg",
@@ -70,6 +72,7 @@
     },
     "image_banner_no_title_qiqCXW": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall255.jpg",
@@ -87,6 +90,7 @@
     },
     "image_banner_no_title_NkMPPR": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall256.jpg",
@@ -104,6 +108,7 @@
     },
     "image_banner_no_title_ayPVht": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall257.jpg",
@@ -121,6 +126,7 @@
     },
     "image_banner_no_title_j4abVj": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall258.jpg",
@@ -138,6 +144,7 @@
     },
     "image_banner_no_title_c9zL6q": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall259.jpg",
@@ -155,6 +162,7 @@
     },
     "image_banner_no_title_LVgRdV": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall2510.jpg",
@@ -172,6 +180,7 @@
     },
     "image_banner_no_title_h4EhBM": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall2511.jpg",
@@ -189,6 +198,7 @@
     },
     "image_banner_no_title_cdpMwM": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall2512.jpg",
@@ -206,6 +216,7 @@
     },
     "image_banner_no_title_dQTAGM": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall2513.jpg",
@@ -223,6 +234,7 @@
     },
     "image_banner_no_title_EbmhNd": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall2514.jpg",
@@ -240,6 +252,7 @@
     },
     "image_banner_no_title_Aw88qy": {
       "type": "image-banner-no-title",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ty_fall2515.jpg",
