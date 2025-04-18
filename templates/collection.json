@@ -55,6 +55,7 @@
         "text_77h9Wr",
         "buttons_qdweXm"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ collection.image }}",
         "image_overlay_opacity": 0,
